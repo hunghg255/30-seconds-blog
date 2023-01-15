@@ -74,7 +74,9 @@ promisedOperation()
 
 - `Promise.all()` turns an array of promises into a promise of an array.
 - If any promise is rejected, the error will pass through.
+- `Promise.allSettled()` This returned promise fulfills when all of the input's promises settle
 - `Promise.race()` passes through the first settled promise.
+- `Promise.any()` This returned promise fulfills when any of the input's promises fulfills, with this first fulfillment value. It rejects when all of the input's promises reject (including when an empty iterable is passed)
 
 ```js
 Promise
